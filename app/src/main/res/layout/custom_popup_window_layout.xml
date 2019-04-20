@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/id_btn_take_photo"
+            style="@style/mine_popwindow_uploadimage_style"
+            android:text="@string/user_upload_photo" />
+
+        <Button
+            android:id="@+id/id_btn_select"
+            style="@style/mine_popwindow_uploadimage_style"
+            android:text="@string/user_upload_camera" />
+
+        <Button
+            android:id="@+id/id_btn_cancel"
+            style="@style/mine_popwindow_uploadimage_style"
+            android:layout_marginBottom="@dimen/common_10"
+            android:text="@string/user_upload_cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>

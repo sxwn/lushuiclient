@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_discuss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/common_12"
+                android:layout_weight="1"
+                android:background="@drawable/shape_detail_comment_input"
+                android:ellipsize="end"
+                android:hint="@string/hint_input_comment"
+                android:maxLines="6"
+                android:padding="@dimen/common_8"
+                android:textColor="@color/main_color"
+                android:textColorHint="#a2a2a2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/common_14"
+                android:text="发送"
+                android:textColor="@color/main_color"
+                android:textColorHint="#b7b7b7"
+                android:textSize="@dimen/common_14" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

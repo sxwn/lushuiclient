@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">露水视频</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_collect">收藏</string>
+    <string name="tab_rank">排行</string>
+    <string name="tab_me">我的</string>
+
+    <string name="home_top_tab_new">最新</string>
+    <string name="home_top_tab_image">图片</string>
+    <string name="home_top_tab_nice">精选</string>
+
+    <!-- stateview-->
+    <string name="net_error_msg">网络不给力</string>
+    <string name="no_comment">暂无评论，点击抢沙发</string>
+
+    <string name="net_unavailable">网络不可用</string>
+
+    <!--video-->
+    <string name="refresh_pull_down_text">下拉推荐</string>
+    <string name="refresh_release_text">松开推荐</string>
+    <string name="refresh_ing_text">推荐中</string>
+    <string name="focus">关注</string>
+
+    <!-- collect-->
+    <string name="collect_name">收藏</string>
+    <string name="collect_image">图片</string>
+    <string name="collect_video">视频</string>
+    <!-- ranking-->
+    <string name="rank_collect">收藏</string>
+    <string name="rank_pay">付费</string>
+    <string name="rank_income">收入</string>
+    <string name="rank_consume">消费</string>
+    
+    <!--mine-->
+    <string name="mine_money">我的钱包</string>
+    <string name="mine_notice">我的关注</string>
+    <string name="mine_fenxiao_record">分销记录</string>
+    <string name="mine_trade_record">交易记录</string>
+    <string name="mine_member_center">会员中心</string>
+    <string name="mine_collect">我的收藏</string>
+    <string name="mine_system_set">系统设置</string>
+    <string name="mine_alipay">支付宝</string>
+
+    <!--set-->
+    <string name="mine_set_bindphone">绑定手机</string>
+    <string name="mine_set_clearcache">清除缓存</string>
+    <string name="mine_set_check_update">检查更新</string>
+    <string name="mine_set_aboutus">关于我们</string>
+    <string name="mine_set_freecontent">免责声明</string>
+    <string name="mine_set_help">帮助</string>
+    <string name="mine_set_logout">退出登录</string>
+
+
+    <string name="comment">评论</string>
+    <string name="detail_write_comment">评论吧…</string>
+    <string name="hint_input_comment">写评论</string>
+
+    <!--搜搜-->
+    <string name="search_hint">搜索您感兴趣的内容</string>
+
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+
+    <!-- -->
+    <string name="pay_tixian">提现</string>
+    <string name="pay_pay">支付</string>
+
+    <!-- about-us-->
+    <string name="company_introduce" >\t\t露水TV是北京露水视界科技有限公司旗下产品，是一家视频推广、内容下载、时尚刊物、电子书籍、网红孵化养成等综合性的互联网平台.公司成立于2016年3月，公司的服务宗旨是丰富广大网友的上网体验，打造一个全新的娱乐内容平台.</string>
+    <string name="company_phone">010-85866500</string>
+    <string name="company_title">露水TV  V1.0.0</string>
+
+
+    <!-- user-->
+    <string name="user_register_str">注册</string>
+    <string name="user_login_str">登录</string>
+    <string name="user_upload_photo">拍照</string>
+    <string name="user_upload_camera">从相册中选择</string>
+    <string name="user_upload_cancel">取消</string>
+
+
+    <!-- loading-->
+    <string name="loading_end">撸手机的习惯可不好哟</string>
+    <string name="loading_entry">无评论数据...</string>
+
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+
+    <string name="permission_request_denied">Permission request denied</string>
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+    <!--推送-->
+    <string name="push_transmission_data">收到一条透传测试消息</string>
+    <string name="add_tag_unknown_exception">设置标签失败，未知异常</string>
+    <string name="add_tag_success">接口调用成功</string>
+    <string name="add_tag_error_count">接口调用失败, tag数量过大, 最大不能超过200个</string>
+    <string name="add_tag_error_frequency">设置标签失败，频率过快</string>
+    <string name="add_tag_error_null">接口调用失败, tag 为空</string>
+    <string name="add_tag_error_repeat">设置标签失败, 标签重复</string>
+    <string name="add_tag_error_unbind">设置标签失败, 服务未初始化成功</string>
+    <string name="add_tag_error_not_online">还未登陆成功</string>
+    <string name="add_tag_error_black_list">该应用已经在黑名单中,请联系售后支持!</string>
+    <string name="add_tag_error_exceed">已存 tag 超过限制</string>
+</resources>

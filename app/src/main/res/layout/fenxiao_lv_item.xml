@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="@dimen/common_12"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/fenxiao_lv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_12"
+        android:text="出水芙蓉" />
+
+    <ImageView
+        android:id="@+id/fenxiao_lv_item_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="564" />
+
+    <TextView
+        android:id="@+id/fenxiao_lv_item_other_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="127" />
+
+    <TextView
+        android:id="@+id/fenxiao_lv_item_total_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="127" />
+
+</RelativeLayout>

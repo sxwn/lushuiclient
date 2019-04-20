@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_vip_top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/common_15"
+        android:layout_marginRight="@dimen/common_15"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_vip_top_user"
+        android:paddingBottom="@dimen/common_10"
+        android:paddingTop="@dimen/common_18">
+
+        <ImageView
+            android:id="@+id/vip_listview_headview_userheadshot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/common_6"
+            android:layout_toRightOf="@id/vip_listview_headview_userheadshot">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/vip_listview_headview_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF484848"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/vip_listview_headview_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vip_listview_headview_name"
+                    android:layout_marginTop="@dimen/common_5"
+                    android:text="暂未开通"
+                    android:textColor="#FF9B9B9B"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vip_listview_headview_icon"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_15"
+            android:layout_marginTop="@dimen/common_15" />
+
+        <TextView
+            android:id="@+id/vip_listview_headview_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/common_15"
+            android:textColor="#B29437"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/vip_listview_headview_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_15"
+            android:text="会员兑换>>>"
+            android:textColor="#FF9B9B9B"
+            android:textSize="13dp" />
+    </RelativeLayout>
+</RelativeLayout>

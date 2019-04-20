@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="6dp"
+    android:background="@color/white"
+    android:id="@+id/coin_recharge_item_parent"
+    android:orientation="vertical"
+    android:paddingBottom="9dp"
+    android:paddingTop="@dimen/common_10">
+    <TextView
+        android:id="@+id/coin_recharge_recycle_item_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="10金币"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/coin_recharge_recycle_item_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_recharge_recycle_item_coin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_3"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="1111"
+        android:textSize="14dp" />
+
+
+</LinearLayout>

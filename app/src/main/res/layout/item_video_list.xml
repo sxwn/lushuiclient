@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/item_video_list_top_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/common_12" />
+
+            <ImageView
+                android:id="@+id/item_video_list_top_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/common_12"
+                android:layout_toRightOf="@id/item_video_list_top_username"
+                android:background="@drawable/user_image_bg"
+                android:padding="@dimen/common_2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/collect_fragment_video_item_cb"
+            style="@style/common_layout_wrap_content"
+            android:layout_marginLeft="@dimen/common_8"
+            android:layout_marginRight="@dimen/common_8"
+            android:background="@drawable/shape_delete_checked"
+            android:button="@null"
+            android:checked="false"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/video_main_framelayout"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <com.lushuitv.yewuds.view.MyVideoPlayerStandard
+                android:id="@+id/video_player"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <!--  android:background="@drawable/jc_title_bg"-->
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_14">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_watch_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_rectangle_translucent"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:minWidth="30dp"
+                    android:text="02:11"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/item_video_list_pay"
+                layout="@layout/video_isplay_pay_layout" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_video_list_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/common_22"
+        android:layout_marginRight="@dimen/common_22">
+
+        <RelativeLayout
+            android:id="@+id/item_video_item_hot_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_video_item_hot_icon"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/video_hot_no" />
+
+            <TextView
+                android:id="@+id/item_video_item_hot_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_8"
+                android:layout_toRightOf="@id/item_video_item_hot_icon"
+                android:textColor="#9B9B9B"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_video_list_comment_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_toRightOf="@id/item_video_item_hot_rl">
+
+            <ImageView
+                android:id="@+id/item_video_item_comment_icon"
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/video_comment" />
+
+            <TextView
+                android:id="@+id/item_video_item_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_8"
+                android:layout_toRightOf="@id/item_video_item_comment_icon"
+                android:textColor="#9B9B9B"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_video_list_collect_rl"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_toRightOf="@id/item_video_list_comment_rl">
+
+            <ImageView
+                android:id="@+id/item_video_item_collect_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/video_collect_no" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_video_list_share_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/share_new_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

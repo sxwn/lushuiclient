@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_window_next_say"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_1"
+                android:background="@color/divider" />
+            <!--清除缓存-->
+            <RelativeLayout
+                android:id="@+id/mine_set_clearcache"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_clearcache"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/MineFunctionDivider" />
+            <!--检查更新-->
+            <RelativeLayout
+                android:id="@+id/mine_set_checkupdate"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_check_update"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/MineFunctionDivider" />
+            <!--关于我们-->
+            <RelativeLayout
+                android:id="@+id/mine_set_aboutus"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_aboutus"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/MineFunctionDivider" />
+            <!--免费声明-->
+            <RelativeLayout
+                android:id="@+id/mine_set_mianzecontent_rl"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_freecontent"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/MineFunctionDivider" />
+            <!--帮助-->
+            <RelativeLayout
+                android:id="@+id/mine_set_help"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_help"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_20"
+                android:background="@color/color_window_next_say" />
+            <!--退出登录-->
+            <RelativeLayout
+                android:id="@+id/mine_set_logout"
+                style="@style/MineFunctionRl">
+
+                <TextView
+                    style="@style/MineFunctionTvLeft"
+                    android:text="@string/mine_set_logout"
+                    android:textColor="@color/text_color_666" />
+
+                <ImageView
+                    style="@style/MineFunctionArrow"
+                    android:background="@mipmap/setting_arrow" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

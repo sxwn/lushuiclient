@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <EditText
+        android:id="@+id/bind_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="请输入手机号"
+        android:padding="@dimen/common_20"
+        android:textColor="#CECECE"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/bind_phone_authcode_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bind_phone_et"
+        android:layout_marginTop="@dimen/common_1"
+        android:background="@color/white"
+        android:padding="@dimen/common_20">
+
+        <EditText
+            android:id="@+id/bind_phone_authcode_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textColor="#CECECE"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bind_phone_obtain_authcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="获取验证码"
+            android:textColor="#CECECE"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_login_rl"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/bind_phone_authcode_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="#CECECE"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

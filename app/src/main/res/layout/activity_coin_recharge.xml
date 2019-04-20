@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="@dimen/common_1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/coin_recharge_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_20">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/coin_recharge_paymoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/common_15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vip_pay_wechat_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_8"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/vip_pay_wechat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_15"
+                    android:layout_marginLeft="@dimen/common_20"
+                    android:layout_marginTop="@dimen/common_15"
+                    android:drawablePadding="@dimen/common_14"
+                    android:text="微信支付"
+                    android:textColor="#484848"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/vip_pay_cb_wechat"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_20"
+                    android:background="@drawable/drawable_pay_type"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vip_pay_alipay_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/vip_pay_alipay_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_15"
+                    android:layout_marginLeft="@dimen/common_20"
+                    android:layout_marginTop="@dimen/common_15"
+                    android:drawablePadding="@dimen/common_14"
+                    android:text="支付宝支付"
+                    android:textColor="#484848"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/vip_pay_cb_alipay"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_20"
+                    android:background="@drawable/drawable_pay_type"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/coin_recharge_pay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/drawable_pay_commit"
+                android:gravity="center"
+                android:text="确定支付"
+                android:textColor="#FFFFFF"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/coin_recharge_userule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="all"
+                android:text="露水金币用户协议"
+                android:textColor="#9B9B9B"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_20"
+                android:lineSpacingExtra="8dp"
+                android:text="温馨提示:\n金币充值iOS用户兑换比例为:1 元人民币=7 金币;\nAndroid用户兑换比例为:1 元人民币=10 金币；"
+                android:textColor="#9B9B9B"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

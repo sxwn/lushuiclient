@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="channel">
+        <item>最新</item>
+        <item>图片</item>
+        <item>精选</item>
+    </string-array>
+    <string-array name="channel_code">
+        <item>new</item>
+        <item>image</item>
+        <item>all</item>
+    </string-array>
+</resources>

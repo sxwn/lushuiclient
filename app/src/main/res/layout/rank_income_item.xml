@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/rank_income_item_id"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_12"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="@dimen/common_12"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/rank_income_item_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_14"
+        android:layout_toRightOf="@id/rank_income_item_id"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/rank_income_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_14"
+        android:layout_toRightOf="@id/rank_income_item_image"
+        android:gravity="center"
+        android:text="出水芙蓉" />
+
+    <TextView
+        android:id="@+id/rank_income_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_24"
+        android:text="127" />
+
+</RelativeLayout>

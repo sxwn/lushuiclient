@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_new_fragment_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fragment_new_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:background="@mipmap/mine_top_bg"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fragment_new_top_msg"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/common_20"
+            android:layout_marginTop="@dimen/common_36"
+            android:visibility="gone"
+            android:src="@drawable/msg_push_icon" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_new_et_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="134dp">
+
+        <TextView
+            android:id="@+id/framgent_new_top_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="点击头像登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_16" />
+
+        <RelativeLayout
+            android:id="@+id/framgent_new_top_editname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/framgent_new_top_username"
+            android:padding="@dimen/common_6">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_10"
+                android:src="@mipmap/mine_top_edit" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/framgent_new_top_userimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_12"
+            android:src="@drawable/default_user_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="227dp"
+        android:layout_below="@id/fragment_new_et_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/shape_mine_center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mine_new_fragment_money"
+                style="@style/mine_common_style"
+                android:text="@string/mine_money" />
+
+            <View style="@style/mine_common_divider_style" />
+
+            <TextView
+                android:id="@+id/mine_new_fragment_notice"
+                style="@style/mine_common_style"
+                android:text="@string/mine_notice" />
+
+            <View style="@style/mine_common_divider_style" />
+
+
+            <TextView
+                android:id="@+id/mine_new_fragment_fenxiao"
+                style="@style/mine_common_style"
+                android:text="@string/mine_fenxiao_record" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_23"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mine_new_fragment_trade"
+                style="@style/mine_common_style"
+                android:text="@string/mine_trade_record" />
+
+            <View style="@style/mine_common_divider_style" />
+
+            <TextView
+                android:id="@+id/mine_new_fragment_collect"
+                style="@style/mine_common_style"
+                android:text="@string/mine_collect" />
+
+
+            <View style="@style/mine_common_divider_style" />
+
+
+            <TextView
+                android:id="@+id/mine_new_fragment_set"
+                style="@style/mine_common_style"
+                android:text="@string/mine_system_set" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

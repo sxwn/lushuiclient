@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20"
+        android:layout_marginRight="@dimen/common_20">
+
+        <TextView
+            android:id="@+id/item_trade_record_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#484848"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/item_trade_record_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_trade_record_type"
+            android:layout_marginTop="@dimen/common_5"
+            android:textColor="#AEAEAE"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/item_trade_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_trade_record_content"
+            android:layout_marginTop="@dimen/common_5"
+            android:textColor="#AEAEAE"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/item_trade_record_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#484848"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:layout_marginTop="@dimen/common_10"
+        android:background="#F1F1F1" />
+</LinearLayout>

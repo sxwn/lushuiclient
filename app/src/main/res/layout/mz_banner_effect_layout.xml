@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.lushuitv.yewuds.view.mzbanner.CustomViewPager
+        android:id="@+id/mzbanner_vp"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginTop="@dimen/common_16"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:clipChildren="false">
+
+    </com.lushuitv.yewuds.view.mzbanner.CustomViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/banner_indicator_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mzbanner_vp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_18"
+        android:text="火辣/嫩模"
+        android:textColor="#FF808080"
+        android:textSize="13dp" />
+</RelativeLayout>

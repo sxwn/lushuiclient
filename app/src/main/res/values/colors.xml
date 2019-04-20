@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- stateview-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="wechat_main_color">#393A3F</color><!--微信titlebar色值-->
+    <color name="subscribe_category_bar_bg_night">#cc363636</color>
+    <color name="text_grey">#AEAEAE</color>
+    <color name="selector_grey">#DDDDDD</color>
+
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/wechat_main_color</color>
+    <color name="colorAccent">@color/wechat_main_color</color>
+
+    <color name="main_color">#000000</color>
+    <!--<color name="common_grey">#666666</color>-->
+    <color name="translucent">#aa000000</color>
+    <color name="common_grey">#FF1493</color>
+    <color name="main_bg_color">#F1F1F1</color>
+    <color name="cursor_color">#0076FF</color>
+
+
+    <color name="tab_bg">#F3F5F4</color>
+
+
+    <!--home-->
+    <color name="tab_selected_color">#fff85959</color>
+    <color name="tip_view_bg">#D5E8F6</color>
+    <color name="tip_view_text_color">#4592C6</color>
+
+
+    <color name="news_tag_border_red">#F96B6B</color>
+    <color name="news_tag_border_blue">#3091D8</color>
+    <color name="common_text_color">#ff222222</color>
+    <color name="light_font_color">#ff999999</color>
+    <color name="write_comment_divider_color">#ffe6e6e6</color>
+    <color name="tab_layout_divider">#ffe8e8e8</color>
+    <color name="subscribe_category_btn_bg_normal">#ffd43d3d</color>
+    <color name="default_window_bg_night">#ff1a1b1d</color>
+    <color name="subscribe_category_btn_bg_pressed">#ffb11919</color>
+
+
+    <!--video-->
+    <color name="divider">#F0F0F0</color>
+    <color name="pull_refresh_bg">#F3F5F4</color>
+    <color name="light_white">#C1C1C1</color>
+    <color name="color_window_next_say">#F1F1F1</color>
+    <color name="color_window_next_pay">#37485C</color>
+    <color name="video_comment_divider">#CCCCCC</color>
+    <color name="video_item_divider">#F0F0F0</color>
+    <color name="video_comment_bottom_textcolor">#ACACAC</color>
+    <!--mine-->
+    <color name="mine_divider">#1affffff</color>
+    <color name="mine_function_divider">#E6E8E7</color>
+    <color name="mine_function_span">#F3F5F4</color>
+    <color name="mine_login_before">#CECECE</color>
+    <color name="mine_login_after">#484848</color>
+
+    <!--collect-->
+    <color name="collect_bg">#F2F2F2</color>
+
+
+    <!-- 查看大图-->
+    <color name="transparent10_white">#1Affffff</color>
+    <color name="transparent90_white">#E5ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent10">#1A000000</color>
+    <color name="placeholder_color">#1A000000</color>
+    <color name="et_solid_color">#F2F4F3</color>
+
+    <color name="detail_tool_bar_bg">#fff4f5f6</color>
+    <color name="detail_et_border">#ffd8d8d8</color>
+    <color name="detail_comment_name_color">#ff406599</color>
+    <color name="detail_comment_like_color">#ffcacaca</color>
+    <color name="detail_comment_content_color">#ff505050</color>
+
+    <!--评论-->
+    <color name="comment_content_time_color">#9B9B9B</color>
+    <color name="comment_content_color">#484848</color>
+    <color name="comment_content_divider_color">#F0F0F0</color>
+    <color name="comment_main_bgcolor">#F7F7F7</color>
+    <color name="comment_bottom_bg">#F2F2F2</color>
+
+
+    <!--文字颜色-->
+    <color name="red">#ff0000</color>
+    <color name="text_color_999">#999999</color>
+    <color name="text_color_666">#666666</color>
+    <color name="text_color_333">#333333</color>
+    <color name="pay_text_color">#FD2E42</color>
+    <color name="home_search_solid_color">#F1F1F1</color>
+    <color name="home_search_texthint_color">#C0C0C0</color>
+    <color name="home_search_statuscolor">#9B9B9B</color>
+
+
+    <!-- 排名-->
+    <color name="rank_color_first">#CD0021</color>
+    <color name="rank_color_second">#FE8401</color>
+    <color name="rank_color_thrid">#FFC104</color>
+    <color name="rank_color_other">#A3A4A6</color>
+    
+    
+    <!-- user-->
+    <color name="user_image_stroke">#CECECE</color>
+    <color name="user_login_text_hint_color">#CECECE</color>
+    <color name="user_login_text_color">#484848</color>
+
+    <!--search-->
+    <color name="search_tag_bgcolor">#CCFFFFFF</color>
+    <color name="search_tag_textcolor">#9B9B9B</color>
+
+    <!--vip-->
+    <color name="vip_bg_color">#F0F0F0</color>
+    <color name="vip_bg_start_color">#FF5E62</color>
+    <color name="vip_bg_end_color">#FF9966</color>
+    <color name="vip_pay_title_color">#030303</color>
+    <color name="reward_top_bg_color">#FD8083</color>
+    <!-- 金币-->
+    <color name="coin_checked_color">#EBD17F</color>
+    <color name="coin_color">#484848</color>
+    <color name="coin_money_color">#9B9B9B</color>
+
+    <!--matisse-color-->
+    <color name="preview_bottom_toolbar_bg">#CC000000</color>
+    <color name="preview_bottom_size">#61FFFFFF</color>
+
+
+
+</resources>
+

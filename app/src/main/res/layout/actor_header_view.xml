@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/actor_header_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/actor_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@mipmap/mine_top_bg"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/actor_header_back"
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_margin="@dimen/common_18"
+            android:background="@drawable/back_white_icon" />
+
+        <ImageView
+            android:id="@+id/actor_header_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/common_18"
+            android:background="@drawable/menu_action_share" />
+
+        <ImageView
+            android:id="@+id/actor_header_actorimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/common_12"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/actor_header_actorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="神仙姐姐"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_16" />
+
+            <TextView
+                android:id="@+id/actor_header_actor_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actor_header_actorname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_6"
+                android:text="23w粉丝"
+                android:textColor="#CECECE"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/actor_header_view_top"
+        android:layout_marginLeft="@dimen/common_36"
+        android:layout_marginRight="@dimen/common_36"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/actor_header_official_rb"
+            style="@style/actor_detail_style_radiobutton"
+            android:checked="true"
+            android:gravity="center"
+            android:text="露水动态" />
+
+        <RadioButton
+            android:id="@+id/actor_header_actor_rb"
+            style="@style/actor_detail_style_radiobutton"
+            android:gravity="center"
+            android:text="女神动态" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selector_grey" />
+
+
+</RelativeLayout>

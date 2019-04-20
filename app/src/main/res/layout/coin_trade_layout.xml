@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:background="#F1F1F1" />
+
+    <RadioGroup
+        android:id="@+id/coin_trade_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_20"
+        android:layout_marginTop="@dimen/common_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/coin_trade_income_rb"
+            android:layout_width="114dp"
+            android:layout_height="29dp"
+            android:background="@drawable/drawable_record_bg"
+            android:checked="true"
+            android:button="@color/transparent"
+            android:gravity="center"
+            android:text="收入"
+            android:textSize="13dp"/>
+
+        <RadioButton
+            android:id="@+id/coin_trade_consume_rb"
+            android:layout_width="114dp"
+            android:layout_height="29dp"
+            android:background="@drawable/drawable_record_bg"
+            android:button="@color/transparent"
+            android:gravity="center"
+            android:text="支出"
+            android:textSize="13dp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/coin_trade_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

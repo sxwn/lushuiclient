@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_editname">
+
+        <EditText
+            android:id="@+id/edit_input_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="昵称不能超过7个字"
+            android:paddingBottom="@dimen/common_6"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:maxLength="7"
+            android:paddingTop="@dimen/common_6"
+            android:textColor="#FFC0C0C0"
+            android:textSize="@dimen/common_16" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/edit_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common_20">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/edit_name_commit" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

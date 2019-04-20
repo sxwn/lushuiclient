@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/home_search_solid_color" />
+
+    <com.lushuitv.yewuds.view.mzbanner.MZBannerView
+        android:id="@+id/view_new_pager_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canLoop="true"
+        app:indicatorAlign="center"
+        app:indicatorPaddingLeft="@dimen/common_12"
+        app:middle_page_cover="false"
+        app:open_mz_mode="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/home_search_solid_color" />
+</LinearLayout>

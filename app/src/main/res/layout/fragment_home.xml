@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/home_fragment_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home_fragment_rb_new"
+                style="@style/home_fragment_tab"
+                android:checked="true"
+                android:text="@string/home_top_tab_new" />
+
+            <RadioButton
+                android:id="@+id/home_fragment_rb_image"
+                style="@style/home_fragment_tab"
+                android:text="@string/home_top_tab_image" />
+
+            <RadioButton
+                android:id="@+id/home_fragment_rb_good"
+                style="@style/home_fragment_tab"
+                android:text="@string/home_top_tab_nice" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_6"
+            android:layout_marginRight="@dimen/common_6"
+            android:scaleType="center"
+            android:src="@mipmap/search_channel" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

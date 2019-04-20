@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--默认的actionbar的高度为48dp-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-48dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/actor_reward_top_bg" />
+
+                <ImageView
+                    android:id="@+id/actor_reward_userimage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/actor_reward_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/common_10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/actor_reward_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="@dimen/common_20"
+                android:layout_marginRight="@dimen/common_20"
+                android:layout_marginTop="@dimen/common_30"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="随意赏"
+                android:textColor="#484848"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="@dimen/common_20"
+                android:layout_marginRight="@dimen/common_20"
+                android:alwaysDrawnWithCache="true"
+                android:background="@drawable/drawable_obtain_cash_topbg"
+                android:padding="@dimen/common_20">
+
+                <EditText
+                    android:id="@+id/actor_reward_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@null"
+                    android:hint="大爷我有的是钱(自定义金额)"
+                    android:inputType="number"
+                    android:textColorHint="#C0C0C0"
+                    android:textColor="#484848"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/actor_reward_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/drawable_gray_corners_onehanded"
+                android:gravity="center"
+                android:text="立即打赏"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

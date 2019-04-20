@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common-size -->
+    <dimen name="common_1">1dp</dimen>
+    <dimen name="common_2">2dp</dimen>
+    <dimen name="common_3">3dp</dimen>
+    <dimen name="common_4">4dp</dimen>
+    <dimen name="common_5">5dp</dimen>
+    <dimen name="common_6">6dp</dimen>
+    <dimen name="common_8">8dp</dimen>
+    <dimen name="common_10">10dp</dimen>
+    <dimen name="common_12">12dp</dimen>
+    <dimen name="common_13">13dp</dimen>
+    <dimen name="common_14">14dp</dimen>
+    <dimen name="common_15">15dp</dimen>
+    <dimen name="common_16">16dp</dimen>
+    <dimen name="common_18">18dp</dimen>
+    <dimen name="common_20">20dp</dimen>
+    <dimen name="common_22">22dp</dimen>
+    <dimen name="common_23">23dp</dimen>
+    <dimen name="common_24">24dp</dimen>
+    <dimen name="common_26">26dp</dimen>
+    <dimen name="common_28">28dp</dimen>
+    <dimen name="common_30">30dp</dimen>
+    <dimen name="common_31">31dp</dimen>
+    <dimen name="common_32">32dp</dimen>
+    <dimen name="common_34">34dp</dimen>
+    <dimen name="common_36">36dp</dimen>
+    <dimen name="common_38">38dp</dimen>
+    <dimen name="common_40">40dp</dimen>
+    <dimen name="common_42">42dp</dimen>
+
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="item_margin_horizontal">24dp</dimen>
+    <dimen name="item_margin_vertical">8dp</dimen>
+</resources>

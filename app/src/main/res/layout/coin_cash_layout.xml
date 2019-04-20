@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:text="体现收益" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginTop="27dp">
+
+            <TextView
+                android:id="@+id/coin_cash_layout_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="¥"
+                android:textSize="@dimen/common_34"
+                android:textColor="#484848"/>
+
+            <EditText
+                android:id="@+id/obtain_cash_monet_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_14"
+                android:layout_toRightOf="@id/coin_cash_layout_code"
+                android:background="@null"
+                android:hint="输入提现金额"
+                android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/common_6"
+            android:layout_marginRight="@dimen/common_6"
+            android:background="@color/divider" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginRight="@dimen/common_20"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/coin_cash_layout_usemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="可提现金币:"
+                android:textSize="@dimen/common_16"
+                android:textColor="#808080"/>
+
+            <TextView
+                android:id="@+id/obtain_cash_monet_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_6"
+                android:layout_toRightOf="@id/coin_cash_layout_usemoney"
+                android:text="350.0"
+                android:textColor="#EBD17F"
+                android:textSize="14dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

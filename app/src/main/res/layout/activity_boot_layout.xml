@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/boot_bg_image" />
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/boot_bottom_logo"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_30"
+            android:layout_toRightOf="@id/boot_bottom_logo">
+
+            <ImageView
+                android:id="@+id/boot_bottom_logo_text"
+                android:layout_width="80dp"
+                android:layout_height="19dp"
+                android:src="@mipmap/logo_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boot_bottom_logo_text"
+                android:layout_marginTop="@dimen/common_6"
+                android:text="网红原创内容平台"
+                android:textColor="#FF484848"
+                android:textSize="@dimen/common_14" />
+        </RelativeLayout>
+    </RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_home_tips">
+
+    <TextView
+        android:id="@+id/home_tips_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_26"
+        android:drawableLeft="@mipmap/good_tips_icon"
+        android:drawablePadding="@dimen/common_10"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textColor="#787878"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/home_tips_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_tips_top"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/common_28"
+        android:gravity="center"
+        android:text="保持绿色观影，抵制不良诱惑\n严禁色情传播，注意隐私安全"
+        android:textColor="#808080"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/home_tips_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_tips_middle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_28"
+        android:background="@mipmap/good_tips_commit"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+</RelativeLayout>

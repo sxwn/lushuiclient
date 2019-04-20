@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/common_20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_obtain_cash_topbg"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/common_20"
+        android:paddingRight="@dimen/common_20"
+        android:paddingTop="17dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入支付宝账号"
+            android:textColor="#484848"
+            android:textColorHint="#CECECE"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_14"
+        android:background="@drawable/drawable_obtain_cash_topbg"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/common_20"
+        android:paddingRight="@dimen/common_20"
+        android:paddingTop="17dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="输入真实姓名"
+            android:textColor="#484848"
+            android:textColorHint="#CECECE"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="*绑定成功后不可更改"
+        android:textColor="#9B9B9B"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/drawable_gray_corners_onehanded"
+        android:gravity="center"
+        android:text="绑定"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

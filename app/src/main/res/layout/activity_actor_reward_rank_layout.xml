@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/actor_reward_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#EBD17F"
+        android:gravity="center"
+        android:text="我也要上榜"
+        android:textColor="#FFFFFF"
+        android:textSize="21dp" />
+</RelativeLayout>

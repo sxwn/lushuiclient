@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_comment_detail_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_video_comment_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_15"
+        android:layout_marginLeft="@dimen/common_20"
+        android:layout_marginTop="@dimen/common_15">
+
+        <ImageView
+            android:id="@+id/activity_video_comment_top_userimage"
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/activity_video_comment_top_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_10"
+            android:layout_toRightOf="@id/activity_video_comment_top_userimage"
+            android:textColor="@color/user_login_text_color"
+            android:textSize="@dimen/common_15" />
+
+        <TextView
+            android:id="@+id/activity_video_comment_top_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_20"
+            android:background="@drawable/shape_notice_style"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:layout_marginLeft="@dimen/common_20"
+        android:layout_marginRight="@dimen/common_20"
+        android:background="@color/comment_content_divider_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_video_comment_top_hot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="@dimen/common_10"
+            android:gravity="center"
+            android:textColor="#FADC4A"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_toRightOf="@id/activity_video_comment_top_hot_tv">
+
+            <TextView
+                android:id="@+id/activity_video_comment_top_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/common_10"
+                android:textColor="@color/comment_content_color"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="18dp"
+                android:layout_height="@dimen/common_3"
+                android:layout_below="@id/activity_video_comment_top_comment_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_16"
+                android:background="#484848" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/video_comment_detail_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/video_comment_detail_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据为空"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:background="@color/comment_content_divider_color" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:id="@+id/video_comment_detail_bottom_lefttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_20"
+            android:text="快来评论你喜欢的小姐姐吧！"
+            android:textColor="@color/video_comment_bottom_textcolor"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</LinearLayout>

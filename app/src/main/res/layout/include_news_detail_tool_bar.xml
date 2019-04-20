@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_big_image_comment_bar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/detail_bottom_comment"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_16"
+        android:layout_marginRight="@dimen/common_16"
+        android:background="@drawable/shape_detail_comment"
+        android:drawablePadding="6dp"
+        android:gravity="center|left"
+        android:paddingBottom="@dimen/common_8"
+        android:paddingLeft="@dimen/common_8"
+        android:paddingTop="@dimen/common_8"
+        android:text="@string/detail_write_comment"
+        android:textColor="@color/common_text_color"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <FrameLayout
+            android:id="@+id/bottom_fl_comment_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/video_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/main_tab_badge_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="10"
+                android:textColor="#fffafafa"
+                android:textSize="8sp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_bottom_collect_rl"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/bottom_fl_comment_fl">
+
+            <ImageView
+                android:id="@+id/star_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:src="@mipmap/video_collect_no" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bottom_fl_priase_fl"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fragment_bottom_collect_rl">
+
+            <ImageView
+                android:id="@+id/bottom_fl_priase_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/video_hot_no"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/common_3"
+                android:paddingRight="@dimen/common_3" />
+
+            <TextView
+                android:id="@+id/tv_priase_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/main_tab_badge_bg"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="10"
+                android:textColor="#fffafafa"
+                android:textSize="8sp" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/bottom_bar_share_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_10"
+            android:layout_toRightOf="@id/bottom_fl_priase_fl"
+            android:background="@mipmap/share_new_icon" />
+    </RelativeLayout>
+</RelativeLayout>

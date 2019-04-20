@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FADC4A">
+        <TextView
+            android:id="@+id/actor_detail_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/actor_foot_release"
+            android:drawablePadding="@dimen/common_14"
+            android:layout_centerInParent="true"
+            android:text="发表女神动态"
+            android:textColor="#484848"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

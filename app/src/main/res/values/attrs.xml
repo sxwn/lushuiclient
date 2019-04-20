@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- bottombarlayout -->
+    <declare-styleable name="BottomBarItem">
+        <!--默认状态下的图标-->
+        <attr name="iconNormal" format="reference" />
+        <!--选中状态下的图标-->
+        <attr name="iconSelected" format="reference" />
+        <!--底部文字-->
+        <attr name="itemText" format="string" />
+        <!--文字大小-->
+        <attr name="itemTextSize" format="dimension" />
+        <!--默认状态下的文字颜色-->
+        <attr name="textColorNormal" format="color" />
+        <!--选中状态下的文字颜色-->
+        <attr name="textColorSelected" format="color" />
+        <!--文字和图标的顶部距离-->
+        <attr name="itemMarginTop" format="dimension" />
+        <!--是否开启触摸背景效果-->
+        <attr name="openTouchBg" format="boolean" />
+        <!--设置触摸背景-->
+        <attr name="touchDrawable" format="reference" />
+        <!--设置图标的宽度-->
+        <attr name="iconWidth" format="dimension" />
+        <!--设置图标的高度-->
+        <attr name="iconHeight" format="dimension" />
+        <!--设置BottomBarItem的padding-->
+        <attr name="itemPadding" format="dimension" />
+    </declare-styleable>
+
+    <!--显示提示的View-->
+    <declare-styleable name="TipView">
+        <attr name="tipBackgroundColor" format="color" />
+        <attr name="tipTextColor" format="color" />
+        <attr name="tipText" format="string" />
+        <attr name="tipTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PowerfulRecyclerView">
+        <attr name="dividerColor" format="color" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="dividerDrawable" format="reference" />
+        <attr name="useStaggerLayout" format="boolean" />
+        <attr name="numColumns" format="integer" />
+        <attr name="rvOrientation" format="enum">
+            <enum name="HORIZONTAL" value="0" />
+            <enum name="VERTICAL" value="1" />
+        </attr>
+        <attr name="dividerMarginLeft" format="dimension" />
+        <attr name="dividerMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HtmlTextView">
+        <attr name="loadingImg" format="reference" />
+        <attr name="errorImg" format="reference" />
+        <attr name="defaultWidth" format="reference" />
+        <attr name="defaultHeight" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BorderTextView">
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="followTextColor" format="boolean" />
+    </declare-styleable>
+
+
+    <!--透明渐变的TabView-->
+    <declare-styleable name="AlphaView">
+        <attr name="av_tabIconNormal" format="reference" />
+        <attr name="av_tabIconSelected" format="reference" />
+        <attr name="av_tabText" format="string" />
+        <attr name="av_tabTextSize" format="dimension" />
+        <attr name="av_textColorNormal" format="color" />
+        <attr name="av_textColorSelected" format="color" />
+        <attr name="av_padding_top" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PullZoomLayout">
+        <attr name="pzHeader" format="reference" />
+        <attr name="pzMain" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PwdEditText">
+        <!-- 外部边缘线宽度 -->
+        <attr name="outLineWidth" format="dimension"/>
+        <!-- 外边缘圆弧半径 -->
+        <attr name="outRadius" format="dimension"/>
+        <!-- 外部边缘线条颜色 -->
+        <attr name="outLineColor" format="color"/>
+        <!-- 间隔线宽度 -->
+        <attr name="dividerLineWidth" format="dimension"/>
+        <!-- 间隔线颜色 -->
+        <attr name="dividerLineColor" format="color"/>
+        <!-- 圆点半径 -->
+        <attr name="dotRadius" format="dimension"/>
+        <!-- 圆点颜色 -->
+        <attr name="dotColor" format="color"/>
+        <!-- 输入框宽度 -->
+        <attr name="inputBoxWidth" format="dimension"/>
+        <!-- 密码长度(默认为6) -->
+        <attr name="pwdLength" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="gridPasswordView">
+
+        <attr name="gpvTextColor" format="color|reference" />
+        <attr name="gpvTextSize" format="dimension" />
+
+        <attr name="gpvLineColor" format="color" />
+        <attr name="gpvGridColor" format="color" />
+        <attr name="gpvLineWidth" format="dimension" />
+
+        <attr name="gpvPasswordLength" format="integer" />
+        <attr name="gpvPasswordTransformation" format="string" />
+
+        <attr name="gpvPasswordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <!-- 魅族banner特效-->
+    <declare-styleable name="MZBannerView">
+        <attr name="open_mz_mode" format="boolean"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="indicatorPaddingRight" format="dimension"/>
+        <attr name="indicatorPaddingTop" format="dimension"/>
+        <attr name="indicatorPaddingBottom" format="dimension"/>
+        <attr name="indicatorAlign">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="middle_page_cover" format="boolean"/>
+    </declare-styleable>
+</resources>

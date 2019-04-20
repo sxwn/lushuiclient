@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lushuitv.yewuds.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.lushuitv.yewuds.view.BottomBarLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.lushuitv.yewuds.view.BottomBarItem
+            style="@style/home_fragment_bottom_tab"
+            app:iconNormal="@mipmap/tab_home_new_normal"
+            app:iconSelected="@mipmap/tab_home_new_selected"
+            app:iconWidth="@dimen/common_20"
+            app:iconHeight="@dimen/common_20"
+            app:itemMarginTop="2dp"
+            app:itemText="@string/tab_home"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/text_color_666"
+            app:textColorSelected="@color/common_grey"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <!--<com.lushuitv.yewuds.view.BottomBarItem
+            style="@style/home_fragment_bottom_tab"
+            app:iconHeight="@dimen/common_20"
+            app:iconNormal="@mipmap/tab_collect_new_normal"
+            app:iconSelected="@mipmap/tab_collect_new_selected"
+            app:iconWidth="@dimen/common_20"
+            app:itemMarginTop="2dp"
+            app:itemText="@string/tab_collect"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/text_color_666"
+            app:textColorSelected="@color/common_grey"
+            app:touchDrawable="@drawable/selector_bottom_tab"
+            />-->
+
+        <com.lushuitv.yewuds.view.BottomBarItem
+            style="@style/home_fragment_bottom_tab"
+            app:iconHeight="@dimen/common_20"
+            app:iconNormal="@mipmap/tab_rank_new_normal"
+            app:iconSelected="@mipmap/tab_rank_new_selected"
+            app:iconWidth="@dimen/common_20"
+            app:itemMarginTop="2dp"
+            app:itemText="@string/tab_rank"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/text_color_666"
+            app:textColorSelected="@color/common_grey"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.lushuitv.yewuds.view.BottomBarItem
+            style="@style/home_fragment_bottom_tab"
+            app:iconNormal="@mipmap/tab_mine_new_normal"
+            app:iconSelected="@mipmap/tab_mine_new_selected"
+            app:iconWidth="@dimen/common_20"
+            app:iconHeight="@dimen/common_20"
+            app:itemMarginTop="2dp"
+            app:itemText="@string/tab_me"
+            app:itemTextSize="12sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/text_color_666"
+            app:textColorSelected="@color/common_grey"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+    </com.lushuitv.yewuds.view.BottomBarLayout>
+
+</LinearLayout>

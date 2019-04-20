@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rank_collect_item_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/rank_collect_item_id"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_12"
+        android:background="@mipmap/top_four_icon"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_12" />
+
+    <ImageView
+        android:id="@+id/rank_collect_item_image"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_6"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/rank_collect_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_14"
+        android:layout_marginRight="@dimen/common_14"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="出水芙蓉" />
+
+    <TextView
+        android:id="@+id/rank_collect_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/common_24"
+        android:text="127" />
+
+</LinearLayout>

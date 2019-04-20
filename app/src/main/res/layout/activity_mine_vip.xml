@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_vip_top">
+
+    <com.lushuitv.yewuds.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lushuitv.yewuds.view.MyListView
+            android:id="@+id/member_center_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+    </com.lushuitv.yewuds.view.ReboundScrollView>
+
+</RelativeLayout>

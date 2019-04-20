@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_6"
+        card:cardBackgroundColor="@color/white"
+        card:cardCornerRadius="@dimen/common_6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/collect_fragment_image_item_iv"
+                android:layout_width="180dp"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/image_right_corn" />
+
+                <TextView
+                    android:id="@+id/collect_fragment_image_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="@dimen/common_6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_10" />
+            </FrameLayout>
+
+            <CheckBox
+                android:id="@+id/collect_fragment_image_item_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_delete_checked"
+                android:button="@null"
+                android:checked="false"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/collect_fragment_image_item_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/collect_fragment_image_item_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/common_3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_14"
+        android:layout_marginTop="@dimen/common_14"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/we_chat"
+            style="@style/home_share_tv_style"
+            android:drawableTop="@drawable/wechat_friend_icon"
+            android:text="微信" />
+
+        <TextView
+            android:id="@+id/we_chat_quan"
+            style="@style/home_share_tv_style"
+            android:drawableTop="@drawable/wechat_quan_icon"
+            android:text="朋友圈" />
+
+        <TextView
+            android:id="@+id/we_qq_space_tv"
+            style="@style/home_share_tv_style"
+            android:drawableTop="@drawable/qq_friend"
+            android:text="QQ" />
+
+        <TextView
+            android:id="@+id/we_sina_weibo_tv"
+            style="@style/home_share_tv_style"
+            android:drawableTop="@drawable/weibo_icon"
+            android:text="微博" />
+    </LinearLayout>
+
+</RelativeLayout>

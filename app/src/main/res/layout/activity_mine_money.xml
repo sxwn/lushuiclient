@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:background="@color/divider" />
+
+    <ImageView
+        android:id="@+id/mine_money_icon_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:src="@mipmap/money_new" />
+
+    <TextView
+        android:id="@+id/mine_money_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_money_icon_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="分享收益(元)"
+        android:textColor="@color/text_color_666"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/mine_money_share_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_money_income"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_3"
+        android:textColor="#484848"
+        android:textSize="48dp" />
+
+    <TextView
+        android:id="@+id/money_obtain"
+        android:layout_width="275dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/mine_money_share_income"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_12"
+        android:background="@drawable/shape_obtain_cash"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="#EBD17F"
+        android:textSize="21dp" />
+
+    <RelativeLayout
+        android:id="@+id/money_money_goshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="分享视频获得现金奖励  去分享>>"
+            android:layout_marginBottom="@dimen/common_14"
+            android:textColor="#9B9B9B"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

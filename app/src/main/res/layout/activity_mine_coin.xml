@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <com.lushuitv.yewuds.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/coin_top_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_10"
+                    android:layout_marginLeft="@dimen/common_30"
+                    android:layout_marginTop="@dimen/common_30"
+                    android:text="总金币(个)"
+                    android:textColor="#484848"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/mine_coin_totalmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_30"
+                    android:text="1080.0"
+                    android:textColor="#484848"
+                    android:textSize="48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    style="@style/common_layout_width_weight"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/mine_coin_account_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/common_5"
+                        android:drawableTop="@drawable/coin_account_in_icon"
+                        android:text="充值账户"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/mine_coin_rechage_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mine_coin_account_in"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/common_10"
+                        android:text="730.0"
+                        android:textColor="#EBD17F"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#F0F0F0" />
+
+                <RelativeLayout
+                    style="@style/common_layout_width_weight"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/mine_coin_account_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/common_5"
+                        android:drawableTop="@drawable/coin_account_out_icon"
+                        android:text="收益账户"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/mine_coin_income_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mine_coin_account_out"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/common_10"
+                        android:text="350.0"
+                        android:textColor="#EBD17F"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_coin_obtaincash_account_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_6"
+                android:background="@color/white"
+                android:padding="@dimen/common_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现账户设置"
+                    android:textColor="#808080"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/right_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_coin_paypwd_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                android:background="@color/white"
+                android:padding="@dimen/common_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付密码设置"
+                    android:textColor="#808080"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/right_jiantou" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/mine_coin_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/common_20"
+                android:paddingTop="@dimen/common_15"
+                android:paddingBottom="60dp"
+                android:text="金币使用规则>>>"
+                android:textColor="#9B9B9B"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+    </com.lushuitv.yewuds.view.ReboundScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mine_coin_obtaincash"
+            style="@style/common_layout_width_weight"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mine_coin_recharge"
+            style="@style/common_layout_width_weight"
+            android:background="@color/coin_checked_color"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="#484848"
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>

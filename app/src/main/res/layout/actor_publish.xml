@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/actor_publish_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_12"
+            android:text="取消"
+            android:textColor="#FF454545"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/actor_publish_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/common_12"
+            android:text="发表"
+            android:textColor="#FF454545"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:background="@color/selector_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_20">
+
+        <EditText
+            android:id="@+id/actor_publish_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="有什么想要告诉各位小哥们的呢…"
+            android:maxLength="140"
+            android:textColor="#AEAEAE"
+            android:textColorHint="#AEAEAE"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/actor_publish_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/actor_publish_et"
+            android:layout_marginTop="33dp"
+            android:text="0/140"
+            android:textColor="#484848"
+            android:textColorHint="#AEAEAE"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/actor_publish_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_20"
+        android:layout_marginTop="10dp"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp" />
+
+</LinearLayout>

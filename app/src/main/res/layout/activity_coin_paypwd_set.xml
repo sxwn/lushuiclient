@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/common_30"
+            android:paddingTop="@dimen/common_20"
+            android:text="输入支付密码"
+            android:textColor="#484848"
+            android:textSize="18dp" />
+
+        <com.lushuitv.yewuds.view.gridpasswordview.GridPasswordView
+            android:id="@+id/pwdpwd_set_first"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            app:gpvLineColor="@color/divider"
+            app:gpvLineWidth="1dp"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordType="numberPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/common_30"
+            android:paddingTop="@dimen/common_20"
+            android:text="请再次输入支付密码"
+            android:textColor="#484848"
+            android:textSize="18dp" />
+
+        <com.lushuitv.yewuds.view.gridpasswordview.GridPasswordView
+            android:id="@+id/pwdpwd_set_second"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            app:gpvLineColor="@color/divider"
+            app:gpvLineWidth="1dp"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordType="numberPassword" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/coin_paypwd_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/drawable_gray_corners_onehanded"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+</LinearLayout>

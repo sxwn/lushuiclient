@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/common_6"
+    android:paddingLeft="@dimen/common_12"
+    android:paddingRight="@dimen/common_12"
+    android:paddingTop="@dimen/common_6">
+
+    <ImageView
+        android:id="@+id/sales_item_usericon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_8"
+        android:layout_marginRight="@dimen/common_8"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/sales_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="芒果柯柯"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/sales_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sales_item_username"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/common_6"
+            android:text="8月23日 16:11"
+            android:textColor="@color/text_grey" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sales_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/common_8"
+        android:text="-6.00"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/common_14" />
+
+
+</LinearLayout>

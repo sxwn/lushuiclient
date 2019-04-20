@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_8"
+            android:background="@mipmap/back_white"
+            android:scaleType="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/collect_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_16" />
+
+        <ImageView
+            android:id="@+id/fragment_collect_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_14"
+            android:src="@mipmap/delete_icon" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/fragment_collect_rg"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/fragment_collect_rb_image"
+            style="@style/collect_top_tab"
+            android:checked="true"
+            android:text="@string/collect_image" />
+
+        <RadioButton
+            android:id="@+id/fragment_collect_rb_video"
+            style="@style/collect_top_tab"
+            android:text="@string/collect_video" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_collect_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

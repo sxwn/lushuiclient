@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/common_20"
+    android:paddingRight="@dimen/common_20"
+    >
+
+    <FrameLayout
+        android:id="@+id/video_main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/common_20">
+
+        <com.lushuitv.yewuds.view.MyVideoPlayerStandard
+            android:id="@+id/videoplayer_item_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/videoplayer_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/videoplayer_item_watch_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rectangle_translucent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/videoplayer_item_tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:minWidth="30dp"
+                android:text="02:11"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/item_video_list_pay"
+            layout="@layout/video_isplay_pay_layout" />
+
+    </FrameLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/common_bottombar"
+        android:layout_below="@id/video_main_framelayout"/>
+</RelativeLayout>

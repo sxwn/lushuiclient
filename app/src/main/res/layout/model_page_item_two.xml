@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/model_page_item_two_userimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/common_6" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_6"
+        android:layout_marginTop="@dimen/common_6"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/model_page_item_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="曼妮" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/model_page_item_two_name"
+                android:layout_marginTop="@dimen/common_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/model_page_item_two_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="出水芙蓉" />
+
+                <TextView
+                    android:id="@+id/model_page_item_two_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08月24号" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.lushuitv.yewuds.view.MyGridView
+            android:id="@+id/model_page_item_two_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/common_1"
+            android:numColumns="3"
+            android:layout_marginTop="@dimen/common_24"
+            android:layout_marginBottom="@dimen/common_24"
+            android:verticalSpacing="@dimen/common_1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

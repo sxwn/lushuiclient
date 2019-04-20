@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_1"
+        android:background="@color/divider" />
+    <com.lushuitv.yewuds.view.PullToRefreshLayout
+        android:id="@+id/mine_sales_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.lushuitv.yewuds.view.pullableview.PullableListView
+            android:id="@+id/mine_sales_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:dividerHeight="1dp"
+            android:divider="@color/collect_bg"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15dp" />
+
+        <include layout="@layout/load_more" />
+
+    </com.lushuitv.yewuds.view.PullToRefreshLayout>
+</LinearLayout>

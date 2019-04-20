@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换成功即可畅享会员特权"
+            android:textColor="#FF9B9B9B"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_vip_top_user">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:button="@null"
+                android:hint="请输入8位兑换码，区分大小写"
+                android:paddingBottom="17dp"
+                android:paddingLeft="@dimen/common_10"
+                android:paddingRight="@dimen/common_10"
+                android:paddingTop="17dp"
+                android:textColor="#FF9B9B9B"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_vip_exchange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="17dp"
+                android:paddingLeft="@dimen/common_10"
+                android:paddingRight="@dimen/common_10"
+                android:paddingTop="17dp"
+                android:text="立即兑换"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如何获取兑换码:"
+            android:textColor="#9B9B9B"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_5"
+            android:lineSpacingExtra="@dimen/common_3"
+            android:lineSpacingMultiplier="1.2"
+            android:text="1.购买「圣诞女神」礼盒是唯一获得年费会员兑换码的途径;\t
+ 2.点击购买圣诞女神礼盒;\t
+ 3.今后露水会不定期举行一些运营活动，届时就会有大量兑换码砸向幸运的你啦！"
+            android:textColor="#9B9B9B"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

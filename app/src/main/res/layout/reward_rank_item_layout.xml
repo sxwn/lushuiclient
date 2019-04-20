@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/common_20"
+    android:layout_marginRight="@dimen/common_20"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reward_rank_item_id"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginRight="@dimen/common_20"
+             />
+
+        <ImageView
+            android:id="@+id/reward_rank_item_usericon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reward_rank_item_id"
+            android:src="@drawable/default_user_icon" />
+
+        <TextView
+            android:id="@+id/reward_rank_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_toRightOf="@id/reward_rank_item_usericon"
+            android:text="咸鱼酱没营养"
+            android:textColor="#484848"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/reward_rank_item_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_20"
+            android:text="金币"
+            android:textColor="#FD8083"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/reward_rank_item_coin_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_20"
+            android:layout_toLeftOf="@id/reward_rank_item_coin"
+            android:paddingBottom="24dp"
+            android:paddingTop="25dp"
+            android:text="1.53W"
+            android:textColor="#FD8083"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0" />
+
+</LinearLayout>
